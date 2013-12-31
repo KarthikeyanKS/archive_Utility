@@ -6,7 +6,7 @@ strExtn = ".html"
 strFilename2 = "testng-failed"
 strExtn2 = ".xml"
 
-strSourceFolder = "c:\ebox\Karthik\2\CFET\test-output" 
+strSourceFolder = "c:\ebox\Karthik\2\MyProject\test-output" 
 strSourceFolder1 = Replace(strSourceFolder,"\","\\\\")
 
 'Wscript.echo strSourceFolder1
@@ -22,7 +22,7 @@ Set colMonitoredEvents = objWMIService.ExecNotificationQuery _
     ("Select * From __InstanceCreationEvent Within 5 Where " _
     & "Targetinstance Isa 'CIM_DirectoryContainsFile' and " _
     & "TargetInstance.GroupComponent= " _
-    & "'Win32_Directory.Name=""c:\\\\ebox\\\\Karthik\\\\2\\\\CFET\\\\test-output""'")
+    & "'Win32_Directory.Name=""c:\\\\ebox\\\\Karthik\\\\2\\\\MyProject\\\\test-output""'")
 
 
 Do
