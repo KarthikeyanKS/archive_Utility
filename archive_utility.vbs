@@ -7,7 +7,7 @@ strFilename2 = "testng-failed"
 strExtn2 = ".xml"
 
 strSourceFolder = "c:\ebox\Karthik\2\MyProject\test-output" 
-strSourceFolder1 = Replace(strSourceFolder,"\","\\\\")
+'strSourceFolder1 = Replace(strSourceFolder,"\","\\\\")
 
 'Wscript.echo strSourceFolder1
 
